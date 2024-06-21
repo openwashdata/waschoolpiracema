@@ -1,0 +1,254 @@
+---
+output: github_document
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: 72
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+```
+
+# waschoolpiracema
+
+<!-- badges: start -->
+
+[![License: CC BY
+4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+<!-- badges: end -->
+
+The goal of waschoolpiracema is to describe the profile of schools from the basic education system in the municipality of Piracema (Minas Gerais, Brazil). Moreover, we also aimed to compare the characteristics of schools, with a special concern to WASH, pre- (2020), peri- (2021) and post-COVID-19 pandemic (2022) to evaluate to what extend schools in Piracema made progress in providing WASH since the beginning of the COVID-19 pandemic.
+
+This study is a sub-project of a PhD project and an initial study comparing the BNSC from 2020 and 2021 has already been conducted and published by the author of this project (for more details see references). Findings will be essential for the next phase of the research, which will be the collection of primary data in schools in the municipality of Piracema through qualitative methods (interviews, on-spot observations and art-based research).
+
+## Installation
+
+You can install the development version of waschoolpiracema from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("openwashdata/waschoolpiracema")
+```
+
+```{r}
+## Run the following code in console if you don't have the packages
+## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))
+library(dplyr)
+library(knitr)
+library(readr)
+library(stringr)
+library(gt)
+library(kableExtra)
+```
+
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+extdata_path <- "https://github.com/openwashdata/waschoolpiracema/raw/main/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  dplyr::mutate(file_name = str_remove(file_name, ".rda")) |> 
+  dplyr::rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
+```
+
+## Data
+
+The package provides access to meaningful information on the municipality of Piracema. Located in the southeast region of Brazil, in the state of Minas Gerais, Piracema is a small size city adding up to 6,700 inhabitants (IBGE, 2023). Among all Brazilian territories, it ranks as the 3,734º smallest municipality out of 5,570 and in Minas Gerais it ranks as the 492º out of 853 (IBGE, 2023). Piracema is located approximately 120 km away from the capital of its state (Belo Horizonte), and it is inaccessible by public transportation (IBGE, 2023). Piracema will be the study area for the next phase of the research (collection of primary data).
+
+```{r}
+library(waschoolpiracema)
+```
+
+### waschoolpiracema
+
+The dataset `waschoolpiracema` contains data about the water supply, the sewage disposal, the waste collection and the sanitary equipment of the schools in Piracema. It also provides information about gender, race and education levels of the school's students.
+It has `r nrow(waschoolpiracema)` observations and `r ncol(waschoolpiracema)` variables
+
+```{r}
+waschoolpiracema |> 
+  head(3) |> 
+  gt::gt() |>
+  gt::as_raw_html()
+```
+
+For an overview of the variable names, see the following table.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "waschoolpiracema.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |> 
+  kableExtra::scroll_box(height = "200px")
+```
+
+
+## Examples
+
+```{r}
+# Load necessary libraries
+library(waschoolpiracema)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+# Load the dataset
+load("data/waschoolpiracema.rda")
+
+# Convert admin to a factor with descriptive labels
+waschoolpiracema$admin <- factor(waschoolpiracema$admin, levels = c(1, 2, 3, 4),
+                     labels = c("Federal", "State", "Municipal", "Private"))
+# Create the plot
+ggplot(waschoolpiracema, aes(x = qt_mat_bas, y = pc_girl, color = as.factor(admin))) +
+  geom_point() +
+  labs(title = "Percentage of Girls vs Total Number of Students per School",
+       x = "Total Number of Students",
+       y = "Percentage of Girls",
+       color = "Administration Type") +
+  theme_minimal()
+
+```
+
+```{r}
+# Summarize the data to get average percentages per year
+summary_data <- waschoolpiracema %>%
+  group_by(year) %>%
+  summarise(avg_pc_girl = mean(pc_girl, na.rm = TRUE),
+            avg_pc_boy = mean(pc_boy, na.rm = TRUE))
+
+# Create the plot
+ggplot(summary_data, aes(x = year)) +
+  geom_line(aes(y = avg_pc_girl, color = "Girls")) +
+  geom_line(aes(y = avg_pc_boy, color = "Boys")) +
+  labs(title = "Average Percentage of Girls and Boys over the Years",
+       x = "Year",
+       y = "Average Percentage",
+       color = "Gender") +
+  theme_minimal()
+```
+
+```{r}
+# List of columns related to sanitary, sewage, and waste facilities
+sanitary_sewage_waste_cols <- c(
+  "sanitary", "sanitary_ei", "sanitary_pne", "sanitary_funcionarios", "sanitary_chuveiro",
+  "sewage_rede_publica", "sewage_fossa_septica",
+  "waste_servico_coleta", "waste_queima", "waste_enterra", "waste_destino_final_publico", "waste_descarta_outra_area"
+)
+
+# Convert relevant columns to integers
+waschoolpiracema[sanitary_sewage_waste_cols] <- lapply(waschoolpiracema[sanitary_sewage_waste_cols], function(x) as.integer(as.character(x)))
+
+# Summarize the waschoolpiracema data to get the count and percentage of schools with facilities per year
+summary_data <- waschoolpiracema %>%
+  group_by(year) %>%
+  summarise(across(all_of(sanitary_sewage_waste_cols), ~ mean(.x, na.rm = TRUE))) %>%
+  pivot_longer(cols = sanitary_sewage_waste_cols, names_to = "facility", values_to = "percentage")
+
+# Create the plot
+ggplot(summary_data, aes(x = factor(year), y = percentage, fill = facility)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Percentage of Schools with Sanitary, Sewage, and Waste Facilities by Year",
+       x = "Year",
+       y = "Percentage of Schools",
+       fill = "Facility Type") +
+  theme_minimal() +
+  scale_y_continuous(labels = scales::percent)
+```
+
+```{r}
+# List of columns related to race
+race_cols <- c("pc_white", "pc_brown", "pc_black", "pc_indian", "pc_asian", "pc_nd")
+
+# Summarize the waschoolpiracema data to get the average percentage of students per race per year
+summary_data <- waschoolpiracema %>%
+  group_by(year) %>%
+  summarise(across(all_of(race_cols), ~ mean(.x, na.rm = TRUE))) %>%
+  pivot_longer(cols = race_cols, names_to = "race", values_to = "percentage")
+
+# Create the line plot
+ggplot(summary_data, aes(x = factor(year), y = percentage, color = race, group = race)) +
+  geom_line(size = 1.2) +
+  geom_point(size = 3) +
+  labs(title = "Evolution of Racial Composition of Students Over the Years",
+       x = "Year",
+       y = "Average Percentage of Students",
+       color = "Race") +
+  theme_bw() +  # Use a different theme for better visualization
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
+    axis.title = element_text(size = 14),
+    axis.text = element_text(size = 12),
+    legend.title = element_text(size = 14),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_color_brewer(palette = "Set1")
+
+```
+
+```{r}
+water_cols <- c("drink_water", "public_water", "borehole_water", "well_water", "surface_water", "no_water")
+
+# Convert relevant columns to integers
+waschoolpiracema[water_cols] <- lapply(waschoolpiracema[water_cols], function(x) as.integer(as.character(x)))
+
+# Summarize the data to get the count and percentage of schools with each type of water supply per year
+summary_data <- waschoolpiracema %>%
+  group_by(year) %>%
+  summarise(across(all_of(water_cols), ~ sum(.x, na.rm = TRUE))) %>%
+  pivot_longer(cols = water_cols, names_to = "water_supply", values_to = "count")
+
+# Create the stacked bar plot
+ggplot(summary_data, aes(x = factor(year), y = count, fill = water_supply)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Distribution of Water Supply Types in Schools Over the Years",
+       x = "Year",
+       y = "Number of Schools",
+       fill = "Water Supply Type") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
+    axis.title = element_text(size = 14),
+    axis.text = element_text(size = 12),
+    legend.title = element_text(size = 14),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_brewer(palette = "Set3")
+
+
+```
+## License
+
+Data are available as
+[CC-BY](https://github.com/openwashdata/waschoolpiracema/blob/main/LICENSE.md).
+
+## Citation
+
+Please cite this package using:
+
+```{r}
+citation("waschoolpiracema")
+```
