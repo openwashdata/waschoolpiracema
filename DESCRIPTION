@@ -4,13 +4,16 @@ Version: 0.0.0.9000
 Authors@R: c(
     person("Alexis", "Tabin", , "alexis.tabin@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0004-4908-9250")),
-    person("Kasandra", "Poague", role = "aut")
+    person("Kasandra", "Poague", , "poaguek@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-5430-3141")),
+    person("Mian", "Zhong", , "mzhong@ethz.ch", role = "aut",
+           comment = c(ORCID = "0009-0009-4546-7214"))
   )
 Description: The main goal of this study was to describe the profile of schools from the basic education system in the municipality of Piracema (Minas Gerais, Brazil). Moreover, we also aimed to compare the characteristics of schools, with a special concern to WASH, pre- (2020), peri- (2021) and post-COVID-19 pandemic (2022) to evaluate to what extend schools in Piracema made progress in providing WASH since the beginning of the COVID-19 pandemic. This study is a sub-project of a PhD project and an initial study comparing the BNSC from 2020 and 2021 has already been conducted and published by the author of this project (for more details see references). Findings will be essential for the next phase of the research, which will be the collection of primary data in schools in the municipality of Piracema through qualitative methods (interviews, on-spot observations and art-based research).
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Depends: 
     R (>= 2.10)
 LazyData: true

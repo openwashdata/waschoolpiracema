@@ -5,18 +5,18 @@
 \alias{waschoolpiracema}
 \title{waschoolpiracema: Brazilian National School Census}
 \format{
-A tibble with 6 rows and 36 variables
+A tibble with 21 rows and 36 variables
 \describe{
 \item{year}{Year of Survey}
 \item{sch_id}{Numerical code of the school}
 \item{admin}{The administration of the school is federal (1); state (2); municipal (3), or private (4). Federal, state, and municipal schools are considered public.}
 \item{loc}{The school is located in an urban (1) or rural area (2)}
 \item{drink_water}{The school provides drinking water with quality suitable for human consumption (i.e., ingestion, preparation, and production of food) according to the Brazilian national water quality standards (former Portaria nº 2.914/2011 now Portaria de Consolidação nº5/2017) (1 – Yes; 0 – No)}
-\item{public_water}{The water in the school is supplied by a public network (1 – Yes; 0 – No).}
+\item{public_water}{The water in the school is supplied by a public network (1 – Yes; 0 – No).  }
 \item{borehole_water}{The water in the school is supplied by a borehole (1 – Yes; 0 – No)}
 \item{well_water}{The water in the school is supplied by a cacimba, cistern, or well (1 – Yes; 0 – No)}
 \item{surface_water}{The water in the school is supplied by surface water source (1 – Yes; 0 – No)}
-\item{no_water}{There is no water supply in the school (1 – Yes; 0 – No)}
+\item{no_water}{There is no water supply in the school (1 – Yes; 0 – No) }
 \item{sewage_rede_publica}{The school dispose their sewage into a public sewerage system (1 – Yes; 0 – No)}
 \item{sewage_fossa_septica}{The school dispose their sewage into  septic tank (1 – Yes; 0 – No)}
 \item{waste_servico_coleta}{The solid waste in the school is regularly collected by the public cleaning service (1 – Yes; 0 – No)}

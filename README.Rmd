@@ -31,9 +31,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of waschoolpiracema is to describe the profile of schools from the basic education system in the municipality of Piracema (Minas Gerais, Brazil). Moreover, we also aimed to compare the characteristics of schools, with a special concern to WASH, pre- (2020), peri- (2021) and post-COVID-19 pandemic (2022) to evaluate to what extend schools in Piracema made progress in providing WASH since the beginning of the COVID-19 pandemic.
-
-This study is a sub-project of a PhD project and an initial study comparing the BNSC from 2020 and 2021 has already been conducted and published by the author of this project (for more details see references). Findings will be essential for the next phase of the research, which will be the collection of primary data in schools in the municipality of Piracema through qualitative methods (interviews, on-spot observations and art-based research).
+The goal of `waschoolpiracema` is to describe the profile of schools from the basic education system in the municipality of Piracema (Minas Gerais, Brazil). Moreover, we also aimed to compare the characteristics of schools, with a special concern to WASH, pre- (2020), peri- (2021) and post-COVID-19 pandemic (2022) to evaluate to what extend schools in Piracema made progress in providing WASH since the beginning of the COVID-19 pandemic.
 
 ## Installation
 
@@ -240,6 +238,11 @@ ggplot(summary_data, aes(x = factor(year), y = count, fill = water_supply)) +
 
 
 ```
+
+## Capstone Project
+
+This dataset is shared as part of a capstone project in [Data Science for openwashdata](https://ds4owd-001.github.io/website/). For more information about the project and to explore further insights, please visit the project page at https://ds4owd-001.github.io/project-poaguek/ (to be public available)
+
 ## License
 
 Data are available as

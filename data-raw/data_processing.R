@@ -10,17 +10,14 @@ library(readr)
 library(openxlsx)
 library(tidyverse)
 library(janitor)
-# Read data --------------------------------------------------------------------
-# data_in <- read_csv("data-raw/dataset.csv")
-# codebook <- read_excel("data-raw/codebook.xlsx") |>
-#  clean_names()
 
-# Tidy data --------------------------------------------------------------------
-## Clean the raw data into a tidy format here
+# Read data --------------------------------------------------------------------
 Piracema_2020 <- read_csv(here::here("data-raw/Piracema_2020_clean.csv"))
 Piracema_2021 <- read_csv(here::here("data-raw/Piracema_2021_clean.csv"))
 Piracema_2022 <- read_csv(here::here("data-raw/Piracema_2022_clean.csv"))
 
+# Tidy data --------------------------------------------------------------------
+## Clean the raw data into a tidy format here
 piracema_full <- bind_rows(Piracema_2020, Piracema_2021, Piracema_2022) # binding
 piracema <- piracema_full[,-c(2,3,4,5,6,9)] # anonymization
 
