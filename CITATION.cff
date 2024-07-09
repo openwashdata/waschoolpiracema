@@ -8,7 +8,7 @@ message: 'To cite package "waschoolpiracema" in publications use:'
 type: software
 license: CC-BY-4.0
 title: 'waschoolpiracema: WASH in Schools in Piracema, Brazil'
-version: 0.0.0.9000
+version: 0.0.1
 abstract: The main goal of this study was to describe the profile of schools from
   the basic education system in the municipality of Piracema (Minas Gerais, Brazil).
   Moreover, we also aimed to compare the characteristics of schools, with a special
@@ -35,7 +35,7 @@ authors:
   orcid: https://orcid.org/0009-0009-4546-7214
 repository-code: https://github.com/openwashdata/waschoolpiracema
 url: https://github.com/openwashdata/waschoolpiracema
-date-released: '2024-06-21'
+date-released: '2024-07-09'
 contact:
 - family-names: Tabin
   given-names: Alexis

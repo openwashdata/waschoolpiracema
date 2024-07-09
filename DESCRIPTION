@@ -1,6 +1,6 @@
 Package: waschoolpiracema
 Title: WASH in Schools in  Piracema, Brazil
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: c(
     person("Alexis", "Tabin", , "alexis.tabin@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0004-4908-9250")),
@@ -19,6 +19,6 @@ Depends:
 LazyData: true
 Language: en-GB
 Config/Needs/website: rmarkdown
-Date: 2024-06-21
+Date: 2024-07-09
 URL: https://github.com/openwashdata/waschoolpiracema
 BugReports: https://github.com/openwashdata/waschoolpiracema/issues

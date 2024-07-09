@@ -1,26 +1,26 @@
 directory,file_name,variable_name,variable_type,description
 data,waschoolpiracema.rda,year,double,Year of Survey
 data,waschoolpiracema.rda,sch_id,double,Numerical code of the school
-data,waschoolpiracema.rda,admin,integer,"The administration of the school is federal (1); state (2); municipal (3), or private (4). Federal, state, and municipal schools are considered public."
-data,waschoolpiracema.rda,loc,integer,The school is located in an urban (1) or rural area (2)
-data,waschoolpiracema.rda,drink_water,integer,"The school provides drinking water with quality suitable for human consumption (i.e., ingestion, preparation, and production of food) according to the Brazilian national water quality standards (former Portaria nº 2.914/2011 now Portaria de Consolidação nº5/2017) (1 – Yes; 0 – No)"
-data,waschoolpiracema.rda,public_water,integer,"The water in the school is supplied by a public network (1 – Yes; 0 – No).  "
-data,waschoolpiracema.rda,borehole_water,integer,The water in the school is supplied by a borehole (1 – Yes; 0 – No)
-data,waschoolpiracema.rda,well_water,integer,"The water in the school is supplied by a cacimba, cistern, or well (1 – Yes; 0 – No)"
-data,waschoolpiracema.rda,surface_water,integer,The water in the school is supplied by surface water source (1 – Yes; 0 – No)
-data,waschoolpiracema.rda,no_water,integer,"There is no water supply in the school (1 – Yes; 0 – No) "
-data,waschoolpiracema.rda,sewage_rede_publica,integer,The school dispose their sewage into a public sewerage system (1 – Yes; 0 – No)
-data,waschoolpiracema.rda,sewage_fossa_septica,integer,The school dispose their sewage into  septic tank (1 – Yes; 0 – No)
-data,waschoolpiracema.rda,waste_servico_coleta,integer,The solid waste in the school is regularly collected by the public cleaning service (1 – Yes; 0 – No)
-data,waschoolpiracema.rda,waste_queima,integer,"The solid waste in the school is disposed in an area licensed by environmental agencies, intended to receive solid waste in a planned manner (e.g., landfills) (1 – Yes; 0 – No)"
-data,waschoolpiracema.rda,waste_enterra,integer,The solid waste in the school is burned or incinerated (1 – Yes; 0 – No)
-data,waschoolpiracema.rda,waste_destino_final_publico,integer,The solid waste in the school is buried (1 – Yes; 0 – No)
-data,waschoolpiracema.rda,waste_descarta_outra_area,integer,The solid waste in the school is disposed in another area (none of the other options) (1 – Yes; 0 – No)
-data,waschoolpiracema.rda,sanitary,integer,The school is equipped with sanitary facilities for personal hygiene/physiological needs (1 – Yes; 0 – No)
-data,waschoolpiracema.rda,sanitary_ei,integer,The school is equipped with sanitary facilities for children 0 to 5 years old (1 – Yes; 0 – No)
-data,waschoolpiracema.rda,sanitary_pne,integer,The school is equipped with disability-friendly sanitary facilities following the national guidelines (ABNT - NBR 9050) (1 – Yes; 0 – No)
-data,waschoolpiracema.rda,sanitary_funcionarios,integer,The school is equipped with  sanitary facilities for personal hygiene/physiological needs exclusively for staff (1 – Yes; 0 – No)
-data,waschoolpiracema.rda,sanitary_chuveiro,integer,"The school is equipped with  sanitary facilities or changing room or washing room with appropriate equipment (shower) for bathing, exclusively for students (1 – Yes; 0 – No)"
+data,waschoolpiracema.rda,admin,factor,"The administration of the school is federal (1); state (2); municipal (3), or private (4). Federal, state, and municipal schools are considered public."
+data,waschoolpiracema.rda,loc,factor,The school is located in an urban (1) or rural area (2)
+data,waschoolpiracema.rda,drink_water,logical,"The school provides drinking water with quality suitable for human consumption (i.e., ingestion, preparation, and production of food) according to the Brazilian national water quality standards (former Portaria nº 2.914/2011 now Portaria de Consolidação nº5/2017) "
+data,waschoolpiracema.rda,public_water,logical,"The water in the school is supplied by a public network .  "
+data,waschoolpiracema.rda,borehole_water,logical,The water in the school is supplied by a borehole
+data,waschoolpiracema.rda,well_water,logical,"The water in the school is supplied by a cacimba, cistern, or well "
+data,waschoolpiracema.rda,surface_water,logical,The water in the school is supplied by surface water source
+data,waschoolpiracema.rda,no_water,logical,"There is no water supply in the school"
+data,waschoolpiracema.rda,sewage_rede_publica,logical,The school dispose their sewage into a public sewerage system
+data,waschoolpiracema.rda,sewage_fossa_septica,logical,The school dispose their sewage into  septic tank
+data,waschoolpiracema.rda,waste_servico_coleta,logical,The solid waste in the school is regularly collected by the public cleaning service
+data,waschoolpiracema.rda,waste_queima,logical,"The solid waste in the school is disposed in an area licensed by environmental agencies, intended to receive solid waste in a planned manner (e.g., landfills) "
+data,waschoolpiracema.rda,waste_enterra,logical,The solid waste in the school is burned or incinerated
+data,waschoolpiracema.rda,waste_destino_final_publico,logical,The solid waste in the school is buried
+data,waschoolpiracema.rda,waste_descarta_outra_area,logical,The solid waste in the school is disposed in another area (none of the other options)
+data,waschoolpiracema.rda,sanitary,logical,The school is equipped with sanitary facilities for personal hygiene/physiological needs
+data,waschoolpiracema.rda,sanitary_ei,logical,The school is equipped with sanitary facilities for children 0 to 5 years old
+data,waschoolpiracema.rda,sanitary_pne,logical,The school is equipped with disability-friendly sanitary facilities following the national guidelines (ABNT - NBR 9050)
+data,waschoolpiracema.rda,sanitary_funcionarios,logical,The school is equipped with  sanitary facilities for personal hygiene/physiological needs exclusively for staff
+data,waschoolpiracema.rda,sanitary_chuveiro,logical,"The school is equipped with  sanitary facilities or changing room or washing room with appropriate equipment (shower) for bathing, exclusively for students"
 data,waschoolpiracema.rda,qt_mat_bas,double,Total number of students per school
 data,waschoolpiracema.rda,pc_girl,double,Percentage of girls per school
 data,waschoolpiracema.rda,pc_boy,double,Percentage of boys per school

@@ -9,24 +9,24 @@
 #'   \item{sch_id}{Numerical code of the school}
 #'   \item{admin}{The administration of the school is federal (1); state (2); municipal (3), or private (4). Federal, state, and municipal schools are considered public.}
 #'   \item{loc}{The school is located in an urban (1) or rural area (2)}
-#'   \item{drink_water}{The school provides drinking water with quality suitable for human consumption (i.e., ingestion, preparation, and production of food) according to the Brazilian national water quality standards (former Portaria nº 2.914/2011 now Portaria de Consolidação nº5/2017) (1 – Yes; 0 – No)}
-#'   \item{public_water}{The water in the school is supplied by a public network (1 – Yes; 0 – No).  }
-#'   \item{borehole_water}{The water in the school is supplied by a borehole (1 – Yes; 0 – No)}
-#'   \item{well_water}{The water in the school is supplied by a cacimba, cistern, or well (1 – Yes; 0 – No)}
-#'   \item{surface_water}{The water in the school is supplied by surface water source (1 – Yes; 0 – No)}
-#'   \item{no_water}{There is no water supply in the school (1 – Yes; 0 – No) }
-#'   \item{sewage_rede_publica}{The school dispose their sewage into a public sewerage system (1 – Yes; 0 – No)}
-#'   \item{sewage_fossa_septica}{The school dispose their sewage into  septic tank (1 – Yes; 0 – No)}
-#'   \item{waste_servico_coleta}{The solid waste in the school is regularly collected by the public cleaning service (1 – Yes; 0 – No)}
-#'   \item{waste_queima}{The solid waste in the school is disposed in an area licensed by environmental agencies, intended to receive solid waste in a planned manner (e.g., landfills) (1 – Yes; 0 – No)}
-#'   \item{waste_enterra}{The solid waste in the school is burned or incinerated (1 – Yes; 0 – No)}
-#'   \item{waste_destino_final_publico}{The solid waste in the school is buried (1 – Yes; 0 – No)}
-#'   \item{waste_descarta_outra_area}{The solid waste in the school is disposed in another area (none of the other options) (1 – Yes; 0 – No)}
-#'   \item{sanitary}{The school is equipped with sanitary facilities for personal hygiene/physiological needs (1 – Yes; 0 – No)}
-#'   \item{sanitary_ei}{The school is equipped with sanitary facilities for children 0 to 5 years old (1 – Yes; 0 – No)}
-#'   \item{sanitary_pne}{The school is equipped with disability-friendly sanitary facilities following the national guidelines (ABNT - NBR 9050) (1 – Yes; 0 – No)}
-#'   \item{sanitary_funcionarios}{The school is equipped with  sanitary facilities for personal hygiene/physiological needs exclusively for staff (1 – Yes; 0 – No)}
-#'   \item{sanitary_chuveiro}{The school is equipped with  sanitary facilities or changing room or washing room with appropriate equipment (shower) for bathing, exclusively for students (1 – Yes; 0 – No)}
+#'   \item{drink_water}{The school provides drinking water with quality suitable for human consumption (i.e., ingestion, preparation, and production of food) according to the Brazilian national water quality standards (former Portaria nº 2.914/2011 now Portaria de Consolidação nº5/2017) }
+#'   \item{public_water}{The water in the school is supplied by a public network .  }
+#'   \item{borehole_water}{The water in the school is supplied by a borehole}
+#'   \item{well_water}{The water in the school is supplied by a cacimba, cistern, or well }
+#'   \item{surface_water}{The water in the school is supplied by surface water source}
+#'   \item{no_water}{There is no water supply in the school}
+#'   \item{sewage_rede_publica}{The school dispose their sewage into a public sewerage system}
+#'   \item{sewage_fossa_septica}{The school dispose their sewage into  septic tank}
+#'   \item{waste_servico_coleta}{The solid waste in the school is regularly collected by the public cleaning service}
+#'   \item{waste_queima}{The solid waste in the school is disposed in an area licensed by environmental agencies, intended to receive solid waste in a planned manner (e.g., landfills) }
+#'   \item{waste_enterra}{The solid waste in the school is burned or incinerated}
+#'   \item{waste_destino_final_publico}{The solid waste in the school is buried}
+#'   \item{waste_descarta_outra_area}{The solid waste in the school is disposed in another area (none of the other options)}
+#'   \item{sanitary}{The school is equipped with sanitary facilities for personal hygiene/physiological needs}
+#'   \item{sanitary_ei}{The school is equipped with sanitary facilities for children 0 to 5 years old}
+#'   \item{sanitary_pne}{The school is equipped with disability-friendly sanitary facilities following the national guidelines (ABNT - NBR 9050)}
+#'   \item{sanitary_funcionarios}{The school is equipped with  sanitary facilities for personal hygiene/physiological needs exclusively for staff}
+#'   \item{sanitary_chuveiro}{The school is equipped with  sanitary facilities or changing room or washing room with appropriate equipment (shower) for bathing, exclusively for students}
 #'   \item{qt_mat_bas}{Total number of students per school}
 #'   \item{pc_girl}{Percentage of girls per school}
 #'   \item{pc_boy}{Percentage of boys per school}
