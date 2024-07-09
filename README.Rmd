@@ -28,7 +28,7 @@ knitr::opts_chunk$set(
 
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-
+[![R-CMD-check](https://github.com/openwashdata/waschoolpiracema/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/waschoolpiracema/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of `waschoolpiracema` is to describe the profile of schools from the basic education system in the municipality of Piracema (Minas Gerais, Brazil). Moreover, the data compare the characteristics of schools, with a special concern to WASH, pre- (2020), peri- (2021) and post-COVID-19 pandemic (2022) to evaluate to what extend schools in Piracema made progress in providing WASH since the beginning of the COVID-19 pandemic.

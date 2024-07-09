@@ -7,7 +7,7 @@
 
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-
+[![R-CMD-check](https://github.com/openwashdata/waschoolpiracema/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/waschoolpiracema/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of `waschoolpiracema` is to describe the profile of schools
@@ -78,7 +78,7 @@ waschoolpiracema |>
   gt::as_raw_html()
 ```
 
-<div id="whlpdlqlqz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="yprihlkawh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -845,7 +845,7 @@ citation("waschoolpiracema")
 #> To cite package 'waschoolpiracema' in publications use:
 #> 
 #>   Tabin A, Poague K, Zhong M (2024). _waschoolpiracema: WASH in Schools
-#>   in Piracema, Brazil_. R package version 0.0.0.9000,
+#>   in Piracema, Brazil_. R package version 0.0.1,
 #>   <https://github.com/openwashdata/waschoolpiracema>.
 #> 
 #> A BibTeX entry for LaTeX users is
@@ -854,7 +854,7 @@ citation("waschoolpiracema")
 #>     title = {waschoolpiracema: WASH in Schools in  Piracema, Brazil},
 #>     author = {Alexis Tabin and Kasandra Poague and Mian Zhong},
 #>     year = {2024},
-#>     note = {R package version 0.0.0.9000},
+#>     note = {R package version 0.0.1},
 #>     url = {https://github.com/openwashdata/waschoolpiracema},
 #>   }
 ```
