@@ -20,13 +20,15 @@
 
   "notes": "Visit the website of this dataset for instructions how to use it:\n    https://openwashdata.github.io/waschoolpiracema/",
 
-  "related_identifiers": {
+  "related_identifiers": [
+    {
     "identifier": "https://openwashdata.github.io/waschoolpiracema/",
     "relation": "isCompiledBy",
     "resource_type": "dataset"
-  },
-
-  "communities": {
-    "identifier": "openwashdata"
   }
+  ],
+
+  "communities": [
+    {"identifier": "openwashdata"}
+    ]
 }
