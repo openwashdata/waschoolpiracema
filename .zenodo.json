@@ -1,0 +1,27 @@
+{
+  "creators": [
+    {
+      "name": "Tabin, Alexis",
+      "orcid": "0009-0004-4908-9250"
+    },
+    {
+      "name": "Poague, Kasandra",
+      "orcid": "0000-0002-5430-3141"
+    },
+    {
+      "name": "Zhong, Mian",
+      "orcid": "0009-0009-4546-7214"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "upload_type": "dataset",
+  "notes": "Visit the website of this dataset for instructions how to use it:\n    https://openwashdata.github.io/waschoolpiracema/",
+  "related_identifiers": {
+    "identifier": "https://openwashdata.github.io/waschoolpiracema/",
+    "relation": "isCompiledBy",
+    "resource_type": "dataset"
+  },
+  "communities": {
+    "identifier": "openwashdata"
+  }
+}
