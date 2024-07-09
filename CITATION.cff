@@ -9,6 +9,7 @@ type: software
 license: CC-BY-4.0
 title: 'waschoolpiracema: WASH in Schools in Piracema, Brazil'
 version: 0.0.1
+doi: 10.5281/zenodo.12701107
 abstract: The main goal of this study was to describe the profile of schools from
   the basic education system in the municipality of Piracema (Minas Gerais, Brazil).
   Moreover, we also aimed to compare the characteristics of schools, with a special
@@ -41,16 +42,12 @@ contact:
   given-names: Alexis
   email: alexis.tabin@gmail.com
   orcid: https://orcid.org/0009-0004-4908-9250
-references:
-- type: software
-  title: 'R: A Language and Environment for Statistical Computing'
-  notes: Depends
-  url: https://www.R-project.org/
-  authors:
-  - name: R Core Team
-  institution:
-    name: R Foundation for Statistical Computing
-    address: Vienna, Austria
-  year: '2024'
-  version: '>= 2.10'
+keywords:
+- brazil
+- opendata
+- openwashdata
+- piracema
+- r
+- sanitation
+- wash
 
