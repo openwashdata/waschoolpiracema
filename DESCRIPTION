@@ -1,5 +1,5 @@
 Package: waschoolpiracema
-Title: WASH in Schools in  Piracema, Brazil
+Title: WASH in Schools in Piracema, Brazil
 Version: 0.0.1
 Authors@R: c(
     person("Alexis", "Tabin", , "alexis.tabin@gmail.com", role = c("aut", "cre"),
@@ -13,12 +13,15 @@ Description: The main goal of this study was to describe the profile of schools 
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
 Depends: 
     R (>= 2.10)
 LazyData: true
 Language: en-GB
-Config/Needs/website: rmarkdown
+Config/Needs/website: rmarkdown, dplyr, knitr, readr, stringr, gt, kableExtra, ggplot2, tidyr, scales
 Date: 2024-07-09
 URL: https://github.com/openwashdata/waschoolpiracema
 BugReports: https://github.com/openwashdata/waschoolpiracema/issues
+X-schema.org-keywords: open data, washdata, WASH in schools, water supply, sanitation, solid waste, school census, Piracema, Minas Gerais, Brazil
+X-schema.org-spatialCoverage: Piracema, Minas Gerais, Brazil
+X-schema.org-temporalCoverage: 2020-01-01/2022-12-31
+Config/roxygen2/version: 8.0.0
