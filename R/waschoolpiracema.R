@@ -18,9 +18,9 @@
 #'   \item{sewage_rede_publica}{The school dispose their sewage into a public sewerage system}
 #'   \item{sewage_fossa_septica}{The school dispose their sewage into  septic tank}
 #'   \item{waste_servico_coleta}{The solid waste in the school is regularly collected by the public cleaning service}
-#'   \item{waste_queima}{The solid waste in the school is disposed in an area licensed by environmental agencies, intended to receive solid waste in a planned manner (e.g., landfills) }
-#'   \item{waste_enterra}{The solid waste in the school is burned or incinerated}
-#'   \item{waste_destino_final_publico}{The solid waste in the school is buried}
+#'   \item{waste_queima}{The solid waste in the school is burned or incinerated}
+#'   \item{waste_enterra}{The solid waste in the school is buried}
+#'   \item{waste_destino_final_publico}{The solid waste in the school is disposed in an area licensed by environmental agencies, intended to receive solid waste in a planned manner (e.g., landfills)}
 #'   \item{waste_descarta_outra_area}{The solid waste in the school is disposed in another area (none of the other options)}
 #'   \item{sanitary}{The school is equipped with sanitary facilities for personal hygiene/physiological needs}
 #'   \item{sanitary_ei}{The school is equipped with sanitary facilities for children 0 to 5 years old}
@@ -31,10 +31,10 @@
 #'   \item{pc_girl}{Percentage of girls per school}
 #'   \item{pc_boy}{Percentage of boys per school}
 #'   \item{pc_white}{Percentage of students that are classified or self-identified as white race/skin color per school}
-#'   \item{pc_brown}{Percentage of students that are classified or self-identified as black race/skin color per school}
-#'   \item{pc_black}{Percentage of students that are classified or self-identified as brown race/skin color per school}
-#'   \item{pc_indian}{Percentage of students that are classified or self-identified as Asian race/skin color per school}
-#'   \item{pc_asian}{Percentage of students that are classified or self-identified as indigenous race/skin color per school}
+#'   \item{pc_brown}{Percentage of students that are classified or self-identified as brown race/skin color per school}
+#'   \item{pc_black}{Percentage of students that are classified or self-identified as black race/skin color per school}
+#'   \item{pc_indian}{Percentage of students that are classified or self-identified as indigenous race/skin color per school}
+#'   \item{pc_asian}{Percentage of students that are classified or self-identified as Asian race/skin color per school}
 #'   \item{pc_nd}{Percentage of students that did not declared race/skin color per school}
 #'   \item{pc_cre}{Percentage of students in daycare (0 - 3 years old)}
 #'   \item{pc_pre}{Percentage of students in preschool (4 - 5 years old)}
