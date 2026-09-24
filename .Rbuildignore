@@ -8,3 +8,4 @@
 ^LICENSE\.md$
 ^CITATION\.cff$
 ^\.github$
+^\.zenodo\.json$

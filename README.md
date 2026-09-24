@@ -8,7 +8,7 @@
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![R-CMD-check](https://github.com/openwashdata/waschoolpiracema/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/waschoolpiracema/actions/workflows/R-CMD-check.yaml)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12701107.svg)](https://zenodo.org/doi/10.5281/zenodo.12701107)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12701106.svg)](https://zenodo.org/doi/10.5281/zenodo.12701106)
 <!-- badges: end -->
 
 The goal of `waschoolpiracema` is to describe the profile of schools
@@ -43,8 +43,8 @@ library(kableExtra)
 Alternatively, you can download the individual datasets as a CSV or XLSX
 file from the table below.
 
-| dataset          | CSV                                                                                                         | XLSX                                                                                                          |
-|:-----------------|:------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
+| dataset | CSV | XLSX |
+|:---|:---|:---|
 | waschoolpiracema | [Download CSV](https://github.com/openwashdata/waschoolpiracema/raw/main/inst/extdata/waschoolpiracema.csv) | [Download XLSX](https://github.com/openwashdata/waschoolpiracema/raw/main/inst/extdata/waschoolpiracema.xlsx) |
 
 ## Data
@@ -79,7 +79,7 @@ waschoolpiracema |>
   gt::as_raw_html()
 ```
 
-<div id="evkemfnsjg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ucleddoros" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -231,8 +231,7 @@ waschoolpiracema |>
 <td headers="pc_prim_2" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">0.00000</td>
 <td headers="pc_sec" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">0.00000</td></tr>
   </tbody>
-  &#10;  
-</table>
+  &#10;</table>
 </div>
 
 For an overview of the variable names, see the following table.
@@ -240,439 +239,740 @@ For an overview of the variable names, see the following table.
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:200px; ">
 
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+
 <thead>
+
 <tr>
+
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+
 variable_name
 </th>
+
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+
 variable_type
 </th>
+
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+
 description
 </th>
+
 </tr>
+
 </thead>
+
 <tbody>
+
 <tr>
+
 <td style="text-align:left;">
+
 year
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Year of Survey
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 sch_id
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Numerical code of the school
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 admin
 </td>
+
 <td style="text-align:left;">
+
 factor
 </td>
+
 <td style="text-align:left;">
+
 The administration of the school is federal (1); state (2); municipal
 (3), or private (4). Federal, state, and municipal schools are
 considered public.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 loc
 </td>
+
 <td style="text-align:left;">
+
 factor
 </td>
+
 <td style="text-align:left;">
+
 The school is located in an urban (1) or rural area (2)
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 drink_water
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The school provides drinking water with quality suitable for human
 consumption (i.e., ingestion, preparation, and production of food)
 according to the Brazilian national water quality standards (former
 Portaria nº 2.914/2011 now Portaria de Consolidação nº5/2017)
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 public_water
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The water in the school is supplied by a public network .
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 borehole_water
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The water in the school is supplied by a borehole
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 well_water
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The water in the school is supplied by a cacimba, cistern, or well
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 surface_water
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The water in the school is supplied by surface water source
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 no_water
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 There is no water supply in the school
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 sewage_rede_publica
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The school dispose their sewage into a public sewerage system
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 sewage_fossa_septica
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The school dispose their sewage into septic tank
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 waste_servico_coleta
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The solid waste in the school is regularly collected by the public
 cleaning service
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 waste_queima
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
+The solid waste in the school is burned or incinerated
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+waste_enterra
+</td>
+
+<td style="text-align:left;">
+
+logical
+</td>
+
+<td style="text-align:left;">
+
+The solid waste in the school is buried
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+waste_destino_final_publico
+</td>
+
+<td style="text-align:left;">
+
+logical
+</td>
+
+<td style="text-align:left;">
+
 The solid waste in the school is disposed in an area licensed by
 environmental agencies, intended to receive solid waste in a planned
 manner (e.g., landfills)
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
-waste_enterra
-</td>
-<td style="text-align:left;">
-logical
-</td>
-<td style="text-align:left;">
-The solid waste in the school is burned or incinerated
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-waste_destino_final_publico
-</td>
-<td style="text-align:left;">
-logical
-</td>
-<td style="text-align:left;">
-The solid waste in the school is buried
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
+
 waste_descarta_outra_area
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The solid waste in the school is disposed in another area (none of the
 other options)
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 sanitary
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The school is equipped with sanitary facilities for personal
 hygiene/physiological needs
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 sanitary_ei
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The school is equipped with sanitary facilities for children 0 to 5
 years old
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 sanitary_pne
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The school is equipped with disability-friendly sanitary facilities
 following the national guidelines (ABNT - NBR 9050)
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 sanitary_funcionarios
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The school is equipped with sanitary facilities for personal
 hygiene/physiological needs exclusively for staff
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 sanitary_chuveiro
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 The school is equipped with sanitary facilities or changing room or
 washing room with appropriate equipment (shower) for bathing,
 exclusively for students
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 qt_mat_bas
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Total number of students per school
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 pc_girl
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Percentage of girls per school
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 pc_boy
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Percentage of boys per school
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 pc_white
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Percentage of students that are classified or self-identified as white
 race/skin color per school
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 pc_brown
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
-Percentage of students that are classified or self-identified as black
-race/skin color per school
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-pc_black
-</td>
-<td style="text-align:left;">
-double
-</td>
-<td style="text-align:left;">
+
 Percentage of students that are classified or self-identified as brown
 race/skin color per school
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
-pc_indian
+
+pc_black
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
-Percentage of students that are classified or self-identified as Asian
+
+Percentage of students that are classified or self-identified as black
 race/skin color per school
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
-pc_asian
+
+pc_indian
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Percentage of students that are classified or self-identified as
 indigenous race/skin color per school
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
+pc_asian
+</td>
+
+<td style="text-align:left;">
+
+double
+</td>
+
+<td style="text-align:left;">
+
+Percentage of students that are classified or self-identified as Asian
+race/skin color per school
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
 pc_nd
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Percentage of students that did not declared race/skin color per school
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 pc_cre
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Percentage of students in daycare (0 - 3 years old)
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 pc_pre
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Percentage of students in preschool (4 - 5 years old)
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 pc_prim_1
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Percentage of students in primary education first cycle (6 - 10 years
 old)
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 pc_prim_2
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Percentage of students in primary education second cycle (11 - 14 years
 old)
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 pc_sec
 </td>
+
 <td style="text-align:left;">
+
 double
 </td>
+
 <td style="text-align:left;">
+
 Percentage of students in secondary education (15 - 18 years old)
 </td>
+
 </tr>
+
 </tbody>
+
 </table>
 
 </div>
@@ -689,11 +989,9 @@ library(tidyr)
 # Load the dataset
 load("data/waschoolpiracema.rda")
 
-# Convert admin to a factor with descriptive labels
-waschoolpiracema$admin <- factor(waschoolpiracema$admin, levels = c(1, 2, 3, 4),
-                     labels = c("Federal", "State", "Municipal", "Private"))
+# admin is already a factor with the labels federal, state, municipal and private
 # Create the plot
-ggplot(waschoolpiracema, aes(x = qt_mat_bas, y = pc_girl, color = as.factor(admin))) +
+ggplot(waschoolpiracema, aes(x = qt_mat_bas, y = pc_girl, color = admin)) +
   geom_point() +
   labs(title = "Percentage of Girls vs Total Number of Students per School",
        x = "Total Number of Students",
@@ -702,7 +1000,7 @@ ggplot(waschoolpiracema, aes(x = qt_mat_bas, y = pc_girl, color = as.factor(admi
   theme_minimal()
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" alt="" width="100%" style="display: block; margin: auto;" />
 
 ``` r
 # Summarize the data to get average percentages per year
@@ -722,7 +1020,7 @@ ggplot(summary_data, aes(x = year)) +
   theme_minimal()
 ```
 
-<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="man/figures/README-unnamed-chunk-8-1.png" alt="" width="100%" style="display: block; margin: auto;" />
 
 ``` r
 # List of columns related to sanitary, sewage, and waste facilities
@@ -752,7 +1050,7 @@ ggplot(summary_data, aes(x = factor(year), y = percentage, fill = facility)) +
   scale_y_continuous(labels = scales::percent)
 ```
 
-<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="man/figures/README-unnamed-chunk-9-1.png" alt="" width="100%" style="display: block; margin: auto;" />
 
 ``` r
 # List of columns related to race
@@ -783,7 +1081,7 @@ ggplot(summary_data, aes(x = factor(year), y = percentage, color = race, group =
   scale_color_brewer(palette = "Set1")
 ```
 
-<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="man/figures/README-unnamed-chunk-10-1.png" alt="" width="100%" style="display: block; margin: auto;" />
 
 ``` r
 water_cols <- c("drink_water", "public_water", "borehole_water", "well_water", "surface_water", "no_water")
@@ -815,7 +1113,7 @@ ggplot(summary_data, aes(x = factor(year), y = count, fill = water_supply)) +
   scale_fill_brewer(palette = "Set3")
 ```
 
-<img src="man/figures/README-unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="man/figures/README-unnamed-chunk-11-1.png" alt="" width="100%" style="display: block; margin: auto;" />
 
 ## Capstone Project
 
@@ -846,8 +1144,8 @@ citation("waschoolpiracema")
 #> To cite package 'waschoolpiracema' in publications use:
 #> 
 #>   Tabin A, Poague K, Zhong M (2024). "waschoolpiracema: WASH in Schools
-#>   in Piracema, Brazil." doi:10.5281/zenodo.12701107
-#>   <https://doi.org/10.5281/zenodo.12701107>,
+#>   in Piracema, Brazil." doi:10.5281/zenodo.12701106
+#>   <https://doi.org/10.5281/zenodo.12701106>.
 #>   <https://github.com/openwashdata/waschoolpiracema>.
 #> 
 #> A BibTeX entry for LaTeX users is
@@ -856,10 +1154,10 @@ citation("waschoolpiracema")
 #>     title = {waschoolpiracema: WASH in Schools in Piracema, Brazil},
 #>     author = {Alexis Tabin and Kasandra Poague and Mian Zhong},
 #>     year = {2024},
-#>     doi = {10.5281/zenodo.12701107},
+#>     doi = {10.5281/zenodo.12701106},
 #>     url = {https://github.com/openwashdata/waschoolpiracema},
 #>     abstract = {The main goal of this study was to describe the profile of schools from the basic education system in the municipality of Piracema (Minas Gerais, Brazil). Moreover, we also aimed to compare the characteristics of schools, with a special concern to WASH, pre- (2020), peri- (2021) and post-COVID-19 pandemic (2022) to evaluate to what extend schools in Piracema made progress in providing WASH since the beginning of the COVID-19 pandemic. This study is a sub-project of a PhD project and an initial study comparing the BNSC from 2020 and 2021 has already been conducted and published by the author of this project (for more details see references). Findings will be essential for the next phase of the research, which will be the collection of primary data in schools in the municipality of Piracema through qualitative methods (interviews, on-spot observations and art-based research).},
-#>     keywords = {brazil,opendata,openwashdata,piracema,r,sanitation,wash},
+#>     keywords = {open data,washdata,WASH in schools,water supply,sanitation,solid waste,school census,Piracema,Minas Gerais,Brazil,brazil,opendata,openwashdata,piracema,r,wash},
 #>     version = {0.0.1},
 #>   }
 ```
