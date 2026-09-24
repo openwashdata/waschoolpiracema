@@ -12,9 +12,9 @@ data,waschoolpiracema.rda,no_water,logical,"There is no water supply in the scho
 data,waschoolpiracema.rda,sewage_rede_publica,logical,The school dispose their sewage into a public sewerage system
 data,waschoolpiracema.rda,sewage_fossa_septica,logical,The school dispose their sewage into  septic tank
 data,waschoolpiracema.rda,waste_servico_coleta,logical,The solid waste in the school is regularly collected by the public cleaning service
-data,waschoolpiracema.rda,waste_queima,logical,"The solid waste in the school is disposed in an area licensed by environmental agencies, intended to receive solid waste in a planned manner (e.g., landfills) "
-data,waschoolpiracema.rda,waste_enterra,logical,The solid waste in the school is burned or incinerated
-data,waschoolpiracema.rda,waste_destino_final_publico,logical,The solid waste in the school is buried
+data,waschoolpiracema.rda,waste_queima,logical,The solid waste in the school is burned or incinerated
+data,waschoolpiracema.rda,waste_enterra,logical,The solid waste in the school is buried
+data,waschoolpiracema.rda,waste_destino_final_publico,logical,"The solid waste in the school is disposed in an area licensed by environmental agencies, intended to receive solid waste in a planned manner (e.g., landfills)"
 data,waschoolpiracema.rda,waste_descarta_outra_area,logical,The solid waste in the school is disposed in another area (none of the other options)
 data,waschoolpiracema.rda,sanitary,logical,The school is equipped with sanitary facilities for personal hygiene/physiological needs
 data,waschoolpiracema.rda,sanitary_ei,logical,The school is equipped with sanitary facilities for children 0 to 5 years old
@@ -25,10 +25,10 @@ data,waschoolpiracema.rda,qt_mat_bas,double,Total number of students per school
 data,waschoolpiracema.rda,pc_girl,double,Percentage of girls per school
 data,waschoolpiracema.rda,pc_boy,double,Percentage of boys per school
 data,waschoolpiracema.rda,pc_white,double,Percentage of students that are classified or self-identified as white race/skin color per school
-data,waschoolpiracema.rda,pc_brown,double,Percentage of students that are classified or self-identified as black race/skin color per school
-data,waschoolpiracema.rda,pc_black,double,Percentage of students that are classified or self-identified as brown race/skin color per school
-data,waschoolpiracema.rda,pc_indian,double,Percentage of students that are classified or self-identified as Asian race/skin color per school
-data,waschoolpiracema.rda,pc_asian,double,Percentage of students that are classified or self-identified as indigenous race/skin color per school
+data,waschoolpiracema.rda,pc_brown,double,Percentage of students that are classified or self-identified as brown race/skin color per school
+data,waschoolpiracema.rda,pc_black,double,Percentage of students that are classified or self-identified as black race/skin color per school
+data,waschoolpiracema.rda,pc_indian,double,Percentage of students that are classified or self-identified as indigenous race/skin color per school
+data,waschoolpiracema.rda,pc_asian,double,Percentage of students that are classified or self-identified as Asian race/skin color per school
 data,waschoolpiracema.rda,pc_nd,double,Percentage of students that did not declared race/skin color per school
 data,waschoolpiracema.rda,pc_cre,double,Percentage of students in daycare (0 - 3 years old)
 data,waschoolpiracema.rda,pc_pre,double,Percentage of students in preschool (4 - 5 years old)

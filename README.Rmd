@@ -29,7 +29,7 @@ knitr::opts_chunk$set(
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![R-CMD-check](https://github.com/openwashdata/waschoolpiracema/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/waschoolpiracema/actions/workflows/R-CMD-check.yaml)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12701107.svg)](https://zenodo.org/doi/10.5281/zenodo.12701107)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12701106.svg)](https://zenodo.org/doi/10.5281/zenodo.12701106)
 <!-- badges: end -->
 
 The goal of `waschoolpiracema` is to describe the profile of schools from the basic education system in the municipality of Piracema (Minas Gerais, Brazil). Moreover, the data compare the characteristics of schools, with a special concern to WASH, pre- (2020), peri- (2021) and post-COVID-19 pandemic (2022) to evaluate to what extend schools in Piracema made progress in providing WASH since the beginning of the COVID-19 pandemic.
@@ -120,11 +120,9 @@ library(tidyr)
 # Load the dataset
 load("data/waschoolpiracema.rda")
 
-# Convert admin to a factor with descriptive labels
-waschoolpiracema$admin <- factor(waschoolpiracema$admin, levels = c(1, 2, 3, 4),
-                     labels = c("Federal", "State", "Municipal", "Private"))
+# admin is already a factor with the labels federal, state, municipal and private
 # Create the plot
-ggplot(waschoolpiracema, aes(x = qt_mat_bas, y = pc_girl, color = as.factor(admin))) +
+ggplot(waschoolpiracema, aes(x = qt_mat_bas, y = pc_girl, color = admin)) +
   geom_point() +
   labs(title = "Percentage of Girls vs Total Number of Students per School",
        x = "Total Number of Students",

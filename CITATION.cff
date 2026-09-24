@@ -1,15 +1,15 @@
-# --------------------------------------------
-# CITATION file created with {cffr} R package
+# ------------------------------------------------
+# CITATION.cff file created with {cffr} R package
 # See also: https://docs.ropensci.org/cffr/
-# --------------------------------------------
+# ------------------------------------------------
  
 cff-version: 1.2.0
 message: 'To cite package "waschoolpiracema" in publications use:'
-type: software
+type: dataset
 license: CC-BY-4.0
 title: 'waschoolpiracema: WASH in Schools in Piracema, Brazil'
 version: 0.0.1
-doi: 10.5281/zenodo.12701107
+doi: 10.5281/zenodo.12701106
 abstract: The main goal of this study was to describe the profile of schools from
   the basic education system in the municipality of Piracema (Minas Gerais, Brazil).
   Moreover, we also aimed to compare the characteristics of schools, with a special
@@ -43,11 +43,20 @@ contact:
   email: alexis.tabin@gmail.com
   orcid: https://orcid.org/0009-0004-4908-9250
 keywords:
+- open data
+- washdata
+- WASH in schools
+- water supply
+- sanitation
+- solid waste
+- school census
+- Piracema
+- Minas Gerais
+- Brazil
 - brazil
 - opendata
 - openwashdata
 - piracema
 - r
-- sanitation
 - wash
 
