@@ -1,5 +1,7 @@
 # waschoolpiracema
 
+A data package published by [openwashdata](https://openwashdata.org).
+
 The goal of `waschoolpiracema` is to describe the profile of schools
 from the basic education system in the municipality of Piracema (Minas
 Gerais, Brazil). Moreover, the data compare the characteristics of
