@@ -11,6 +11,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12701106.svg)](https://zenodo.org/doi/10.5281/zenodo.12701106)
 <!-- badges: end -->
 
+A data package published by [openwashdata](https://openwashdata.org).
+
 The goal of `waschoolpiracema` is to describe the profile of schools
 from the basic education system in the municipality of Piracema (Minas
 Gerais, Brazil). Moreover, the data compare the characteristics of
