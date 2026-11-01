@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# waschoolpiracema
+# waschoolpiracema <a href="https://openwashdata.org"><img src="man/figures/logo.png" align="right" width="120" alt="openwashdata" /></a>
 
 <!-- badges: start -->
 
@@ -31,8 +31,6 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/openwashdata/waschoolpiracema/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/waschoolpiracema/actions/workflows/R-CMD-check.yaml)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12701106.svg)](https://zenodo.org/doi/10.5281/zenodo.12701106)
 <!-- badges: end -->
-
-A data package published by [openwashdata](https://openwashdata.org).
 
 The goal of `waschoolpiracema` is to describe the profile of schools from the basic education system in the municipality of Piracema (Minas Gerais, Brazil). Moreover, the data compare the characteristics of schools, with a special concern to WASH, pre- (2020), peri- (2021) and post-COVID-19 pandemic (2022) to evaluate to what extend schools in Piracema made progress in providing WASH since the beginning of the COVID-19 pandemic.
 
@@ -254,6 +252,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/waschoolpiracema/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite this package using:
 
